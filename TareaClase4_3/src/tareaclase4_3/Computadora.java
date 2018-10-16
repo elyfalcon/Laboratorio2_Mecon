@@ -18,8 +18,8 @@ public class Computadora {
     private EProcesador _procesador; 
     //</editor-fold>
 
-    Computadora() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Computadora() {
+       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
      //<editor-fold desc="Metodos">
@@ -41,24 +41,24 @@ public class Computadora {
     public void setPeso(float peso){
     this._peso=peso;
     }
-    private EProcesador getProcesador(){
+    public EProcesador getProcesador(){
     return this._procesador;
     }
-    private void setProcesador(EProcesador procesador){
+    public void setProcesador(EProcesador procesador){
     this._procesador=procesador;
     }
     
     //</editor-fold>
     //<editor-fold desc="Constructor">
     
-    public Computadora(boolean esta, EMarca marca, float peso, EProcesador procesa){
+   /* public Computadora(boolean esta, EMarca marca, float peso, EProcesador procesa){
     this.setEstaEncendida(esta);
     this._marca=_marca.Apple;
     this.setPeso(peso);
     this.setProcesador(_procesador);
-    }
+    }*/
     public void InformarEstado(){
-        System.out.println("Marca: " + this. _marca + "Procesador: " + this._procesador + "Peso: " + this._peso );//+ "Estado: " + this._estaEncendida);
+        System.out.println("Marca: " + this. _marca +  " Procesador: " + this._procesador + " Peso: " + this._peso );//+ "Estado: " + this._estaEncendida);
     }
     public void Encender(){
     this._estaEncendida=true;

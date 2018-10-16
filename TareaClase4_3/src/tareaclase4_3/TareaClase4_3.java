@@ -18,9 +18,14 @@ public class TareaClase4_3 {
         // TODO code application logic here
         
      
-        //Computadora Compu;
-        //Compu = new Computadora;
+        Computadora Compu;
+        Compu = new Computadora();
+        Compu.setMarca(EMarca.Asus);
+        Compu.Encender();
+        Compu.setProcesador(EProcesador.Intel_Core7);
         
+        Compu.setPeso(15);
+        Compu.InformarEstado();
     }
     
 }
