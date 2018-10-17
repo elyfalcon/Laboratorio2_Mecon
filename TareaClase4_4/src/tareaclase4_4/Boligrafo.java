@@ -32,9 +32,9 @@ public class Boligrafo {
     //</editor-fold>
     //<editor-fold desc="Metodos">
     
-    public boolean Pintar(int gasto){
+  //  public boolean Pintar(int gasto){
   
-    }
+ //   }
     public void Recargar(){
     
     }
@@ -48,4 +48,3 @@ public class Boligrafo {
     
     
     
-}

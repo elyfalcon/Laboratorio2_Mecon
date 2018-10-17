@@ -5,6 +5,8 @@
  */
 package tareaclase4_4;
 
+import java.awt.Color;
+
 /**
  *
  * @author Eli
@@ -16,6 +18,14 @@ public class TareaClase4_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Boligrafo lapiz=new Boligrafo();
+        lapiz.setColor(Color.BLUE);
+        lapiz.setTinta(100);
+        Boligrafo lapicera=new Boligrafo();
+        lapicera.setColor(Color.RED);
+        lapicera.setTinta(50);
+        
     }
     
 }
