@@ -26,6 +26,14 @@ public class TareaClase4_4 {
         lapicera.setColor(Color.RED);
         lapicera.setTinta(50);
         
+        if(lapiz.Pintar(70)){
+            System.out.println("Se puede pintar");
+        }
+        else
+        {
+            System.out.println("No alcanza la tinta");
+        }
+        
     }
     
 }

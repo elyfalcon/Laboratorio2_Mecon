@@ -36,10 +36,23 @@ public class Boligrafo {
   
  //   }
     public void Recargar(){
-    
+    this._tinta=100;
     }
     //</editor-fold>
+    public boolean Pintar(int gasto){
+    boolean retorno=false;
     
+    if(this._tinta >=gasto)
+    {
+    retorno=true;
+    this._tinta-=gasto;
+        System.out.println("La cantidad de tinta es: " + this._tinta +" "+ "del color: "+ " "+ this._color);
+    }
+    else
+            System.out.println("No puede pintar, Ud debe ");
+        
+    return retorno;
+    }
     
 }
     
