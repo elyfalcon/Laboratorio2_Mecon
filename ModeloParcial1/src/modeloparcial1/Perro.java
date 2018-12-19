@@ -60,7 +60,12 @@ public class Perro extends Mascota{
              return resp;
         }
     
-    
+    public String ToString()
+    {
+    StringBuilder show=new StringBuilder();
+    show.append(Ficha());
+    return show.toString();
+    }
     
 }
     

@@ -10,6 +10,6 @@ package modeloparcial1;
  * @author efalcon
  */
 public enum TipoManada {
-   manso, bravo;
+   unica, mixta;
     
 }
