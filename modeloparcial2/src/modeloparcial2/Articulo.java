@@ -17,11 +17,10 @@ public class Articulo {
     private float _precioVenta;
     private int _stock;
 
-    public Articulo(int _codigo, String _nombre, float _precioCosto, float _precioVenta, int _stock) {
+    public Articulo(int _codigo, String _nombre, float _precioCosto, int _stock) {
         this._codigo = _codigo;
         this._nombre = _nombre;
         this._precioCosto = _precioCosto;
-        this._precioVenta = _precioVenta;
         this._stock = _stock;
     }
     
@@ -65,8 +64,19 @@ public class Articulo {
     }
     return resp;
     }
-    public int Mas(Articulo articulo1,Articulo articulo2)
+
+   
+    protected static  int SumarStock(Articulo articulo1,Articulo articulo2)
     {
-     ArticuloDeLalista._stock=ArticuloDeLalista + ;
+        int sumaStock;
+     return sumaStock=articulo1._stock + articulo2._stock;
     }
+    
+    public int RestarStock(Articulo articuloUno, int cantidad)
+    {
+     return articuloUno._stock=(int)((articuloUno._stock) - (cantidad));
+    }
+    
+    
+    
 }

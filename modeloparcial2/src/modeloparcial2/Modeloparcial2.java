@@ -16,6 +16,12 @@ public class Modeloparcial2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
+        Comercio ElBolicheDeToni= new Comercio("TONI");
+        
+        Articulo articuloUno= new Articulo(100,"Sprite", (float)2.5,10);
+        
     }
     
 }

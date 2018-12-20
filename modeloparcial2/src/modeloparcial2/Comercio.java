@@ -46,8 +46,19 @@ public class Comercio {
         for (Venta v1 : _misVentas) {
             show.append(v1.RetornarGanancia());
         }
+    }
+    public void ComprarArticulo(Articulo articuloComprado)
+    {
+        for (Articulo articulo : _misArticulos) {
+            if(Articulo.SonIguales(articulo, articuloComprado) )
+            {
+                Articulo.SumarStock(articulo, articuloComprado);
+            }
+           
+                
+            
+        }
     
     }
-    
     
 }
