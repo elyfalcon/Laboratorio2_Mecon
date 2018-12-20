@@ -6,6 +6,8 @@
 package modeloparcial2;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+
 
 /**
  *
@@ -21,7 +23,31 @@ public class Comercio {
         this._dueño = _dueño;
         
     }
+
+    private Comercio()
+    {
+        _misArticulos=new ArrayList<>();
+        _misVentas=new ArrayList<>();
+    }
     
+    public  void MostrarArticulos(Comercio ComercioAMostar)
+    {
+        StringBuilder show= new StringBuilder();
+       
+        for (Articulo art : _misArticulos) {
+            show.append(art.GetNombreYCodigo());
+            
+        }
+    }
+    
+    public  void MostrarGanancia(Comercio ComercioParaResumen)
+    {
+    StringBuilder show=new StringBuilder();
+        for (Venta v1 : _misVentas) {
+            show.append(v1.RetornarGanancia());
+        }
+    
+    }
     
     
 }

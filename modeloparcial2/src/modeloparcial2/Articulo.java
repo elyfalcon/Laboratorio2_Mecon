@@ -65,5 +65,8 @@ public class Articulo {
     }
     return resp;
     }
-    
+    public int Mas(Articulo articulo1,Articulo articulo2)
+    {
+     ArticuloDeLalista._stock=ArticuloDeLalista + ;
+    }
 }
