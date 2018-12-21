@@ -29,8 +29,13 @@ abstract public class Mascota {
     
      protected String DatosCompletos()
     {
-       String patron="%s %d";
-        return String.format(patron,_nombre,_raza);
+      // String patron="%s %d";
+       // return String.format(patron,_nombre,_raza);
+        StringBuilder show=new StringBuilder();
+        show.append(this._nombre);
+        show.append(" ");
+        show.append(this._raza);
+        return show.toString();
     }
      
      protected abstract String Ficha();

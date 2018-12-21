@@ -42,7 +42,7 @@ public class Perro extends Mascota{
         StringBuilder retorno=new StringBuilder();
         if(this._esAlfa)
         {
-        retorno.append(DatosCompletos()).append(this._edad);
+        retorno.append(DatosCompletos()).append(" ").append("Edad: ").append(this._edad);
            
         }
         else

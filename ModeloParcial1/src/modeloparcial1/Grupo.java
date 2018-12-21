@@ -27,13 +27,11 @@ public class Grupo {
         Grupo._tipo = _tipo;
     }
     
-
     public Grupo(String nombre)
     {
      this();
     this._nombre=nombre;
     }
-    
     
     public Grupo(String _nombre, TipoManada _tipo) {
         
@@ -45,10 +43,13 @@ public class Grupo {
     public String toString() {
         StringBuilder show=new StringBuilder();
         show.append("**").append(_nombre).append("**");
-        show.append("\nIntegrantes:");
+        show.append("\nIntegrantes:\n");
       //  show.append("Integrantes:");
         for (Mascota item : _manada) {
-            show.append(item.DatosCompletos());
+         //   show.append(item.DatosCompletos());
+            show.append(" \n");
+          //  show.append("edad:");
+            show.append(item.Ficha());
             
         }
         return show.toString();

@@ -32,8 +32,12 @@ public class ModeloParcial1 {
         {        } else {
             Grupo.AgregarMascota(grupo1, Fer);
         } 
-        
-        
+        Grupo.AgregarMascota(grupo1, Julio);
+        Grupo.AgregarMascota(grupo1, Hernan);
+        Grupo.AgregarMascota(grupo1, Ramon);
+         Grupo.AgregarMascota(grupo1, Julio);
+         Grupo.AgregarMascota(grupo1, Julio);
+         
         System.out.println(grupo1.toString());
         
         
