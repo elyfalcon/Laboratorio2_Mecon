@@ -31,11 +31,25 @@ public class Gato extends Mascota{
          }
              return resp;
         }
-    public String ToString()
-    {
-    StringBuilder show=new StringBuilder();
-    show.append(Ficha());
-    return show.toString();
+    
+    
+    
+    
+    
+   // public String ToString()
+  //  {
+  //  StringBuilder show=new StringBuilder();
+  //  show.append(Ficha());
+  //  return show.toString();
+ //   }
+
+    @Override
+    public String toString() {
+        
+        StringBuilder show=new StringBuilder();
+        show.append(Ficha());
+        return show.toString();
+     //   return "Gato{" + '}';
     }
     
     
