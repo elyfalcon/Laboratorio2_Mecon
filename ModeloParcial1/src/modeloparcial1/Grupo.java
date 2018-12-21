@@ -45,11 +45,14 @@ public class Grupo {
     public String toString() {
         StringBuilder show=new StringBuilder();
         show.append("**").append(_nombre).append("**");
-        show.append("Integrantes:");
+        show.append("\nIntegrantes:");
+      //  show.append("Integrantes:");
         for (Mascota item : _manada) {
+            show.append(item.DatosCompletos());
             
         }
-        return "Grupo{" + "_manada=" + _manada + ", _nombre=" + _nombre + '}';
+        return show.toString();
+        //return "Grupo{" + "_manada=" + _manada + ", _nombre=" + _nombre + '}';
     }
 
    public static boolean Igual(Grupo e,Mascota j){

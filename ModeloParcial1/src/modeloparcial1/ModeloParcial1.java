@@ -28,11 +28,11 @@ public class ModeloParcial1 {
         Mascota Fer=new Gato("Fer","Siames");
         
         
-        if (!Grupo.Igual(grupo1, Fer))
-                {
-                } else {
+        if (Grupo.Igual(grupo1, Fer))
+        {        } else {
             Grupo.AgregarMascota(grupo1, Fer);
-        }
+        } 
+        
         
         System.out.println(grupo1.toString());
         
