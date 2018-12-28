@@ -10,8 +10,8 @@ package modeloparcial2;
  * @author efalcon
  */
 public class Venta {
-    private Articulo _articuloVendido;
-    private int _cantidad;
+    protected Articulo _articuloVendido;
+    protected int _cantidad;
 
     public Venta(Articulo _articuloVendido, int _cantidad) {
         this._articuloVendido = _articuloVendido;

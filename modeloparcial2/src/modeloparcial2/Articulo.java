@@ -11,70 +11,79 @@ package modeloparcial2;
  */
 public class Articulo {
     
-    private int _codigo;
-    private String _nombre;
-    private float _precioCosto;
-    private float _precioVenta;
-    private int _stock;
+    protected int _codigo;
+    protected String _nombre;
+    protected float _precioCosto;
+    protected float _precioVenta;
+    protected int _stock;
 
     public Articulo(int _codigo, String _nombre, float _precioCosto, int _stock) {
         this._codigo = _codigo;
         this._nombre = _nombre;
-        this._precioCosto = _precioCosto;
+        SetPrecioCosto(_precioCosto);
+      //  this._precioCosto = _precioCosto;
         this._stock = _stock;
     }
     
     public String GetNombreYCodigo()
     {
-    StringBuilder show=new StringBuilder();
-    show.append(this._nombre).append(this._codigo);
-    return show.toString();
+    
+         return this._codigo + "--"+this._nombre;
     }
     
     public void SetPrecioCosto(float costo)
     {
-     this._precioCosto=costo;
-     this._precioVenta= (float) ((costo) * (1.3));
-    
+        this._precioCosto=costo;
+        this._precioVenta= (float) ((costo) * (1.3));
+     
     }
     
     public void SetStock(int stock)
     {
-    this._stock=stock;
+        this._stock=stock;
+    }
+
+    public int getStock() {
+        return _stock;
     }
     
     public float GetPrecioVenta()
     {
-    return this._precioVenta;
+        return this._precioVenta;
     }
     public boolean HayStock(int cantidad)
     {
-     boolean retorno=false;
-     if(this._stock >= cantidad)
-     {
-     retorno=true;
-     }
+        boolean retorno=false;
+        if(this._stock >= cantidad)
+        {
+         retorno=true;
+        }
      return retorno;
     }
-    protected static boolean SonIguales(Articulo art1,Articulo art2){
-    boolean resp=false;
-    if(art1._codigo==art2._codigo && art1._nombre==art2._nombre)
-    {
-        resp=true;
-    }
-    return resp;
+    public static boolean SonIguales(Articulo art1,Articulo art2){
+        boolean resp=false;
+        if(art1._codigo==art2._codigo && art1._nombre==art2._nombre)
+        {
+            resp=true;
+        }
+        return resp;
     }
 
    
-    protected static  int SumarStock(Articulo articulo1,Articulo articulo2)
+    public static  int SumarStock(Articulo articulo1,Articulo articulo2)
     {
         int sumaStock;
-     return sumaStock=articulo1._stock + articulo2._stock;
+        return sumaStock=articulo1._stock + articulo2._stock;
     }
     
-    public int RestarStock(Articulo articuloUno, int cantidad)
+    public static int RestarStock(Articulo articuloUno, int cantidad)
     {
-     return articuloUno._stock=(int)((articuloUno._stock) - (cantidad));
+    // return articuloUno._stock=(int)((articuloUno._stock) - (cantidad));
+        int hay=0;
+        if(articuloUno.HayStock(cantidad)){
+            hay=articuloUno._stock=(articuloUno._stock - (cantidad));
+        }
+        return hay;
     }
     
     
